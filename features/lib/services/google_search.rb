@@ -6,6 +6,6 @@ class GoogleSearch
     visit("https://www.google.co.uk/")
   end
   def fill_search_field search_query
-    fill_in("lst-ib", with: search_query).send_keys(:enter)
+    fill_in("q", with: search_query).send_keys(:enter)
   end
 end
